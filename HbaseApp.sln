@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HbaseApp", "HbaseApp\HbaseApp.csproj", "{5877A299-88D2-458A-AC6D-9636ECBEF3F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thrift", "Thrift\Thrift.csproj", "{B60379EE-5531-4F42-879B-8EBD22C9D60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftHbaseClient", "ThriftHbaseClient\ThriftHbaseClient.csproj", "{55F2F9EE-5887-43C4-9A86-C1046EB2C93A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HbaseApp", "HbaseApp\HbaseApp.csproj", "{92148773-657F-4C70-98AD-42F2658E2885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5877A299-88D2-458A-AC6D-9636ECBEF3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5877A299-88D2-458A-AC6D-9636ECBEF3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5877A299-88D2-458A-AC6D-9636ECBEF3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5877A299-88D2-458A-AC6D-9636ECBEF3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B60379EE-5531-4F42-879B-8EBD22C9D60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60379EE-5531-4F42-879B-8EBD22C9D60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60379EE-5531-4F42-879B-8EBD22C9D60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60379EE-5531-4F42-879B-8EBD22C9D60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F2F9EE-5887-43C4-9A86-C1046EB2C93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F2F9EE-5887-43C4-9A86-C1046EB2C93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F2F9EE-5887-43C4-9A86-C1046EB2C93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F2F9EE-5887-43C4-9A86-C1046EB2C93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92148773-657F-4C70-98AD-42F2658E2885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92148773-657F-4C70-98AD-42F2658E2885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92148773-657F-4C70-98AD-42F2658E2885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92148773-657F-4C70-98AD-42F2658E2885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

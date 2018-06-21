@@ -1,0 +1,3 @@
+-r --gen netcore
+
+.\thrift-0.11.0.exe -r --gen netcore D:\Learn\HbaseApp\hbase-thrift2\hbase.thrift
