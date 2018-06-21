@@ -9,6 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftHbaseClient", "Thrift
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HbaseApp", "HbaseApp\HbaseApp.csproj", "{92148773-657F-4C70-98AD-42F2658E2885}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thrift2", "thrift2", "{CF96CA8F-563F-4873-8285-F1980B6FEA2E}"
+	ProjectSection(SolutionItems) = preProject
+		hbase-thrift2\hbase.thrift = hbase-thrift2\hbase.thrift
+		hbase-thrift2\info.txt = hbase-thrift2\info.txt
+		hbase-thrift2\thrift-0.11.0.exe = hbase-thrift2\thrift-0.11.0.exe
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
