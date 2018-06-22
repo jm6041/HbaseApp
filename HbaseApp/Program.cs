@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -29,8 +30,12 @@ namespace HbaseApp
                 var client = new THBaseService.Client(protocol);
                 await client.OpenTransportAsync(token);
                 byte[] table = Encoding.UTF8.GetBytes("test");
+                byte[] row1 = Encoding.UTF8.GetBytes("row1");
+                byte[] cos = Encoding.UTF8.GetBytes("a");
                 TGet get = new TGet();
-                get.Row = Encoding.UTF8.GetBytes("row1");
+                get.Row = row1;
+                var regs = await client.getAllRegionLocationsAsync(table, new CancellationToken());
+                var rlist = await client.getMultipleAsync(table, new List<TGet> { new TGet(row1) }, new CancellationToken());
                 TResult reslut = await client.getAsync(table, get, new CancellationToken());
                 //print results
                 Console.WriteLine("RowKey:\n{0}", Encoding.UTF8.GetString(reslut.Row));
